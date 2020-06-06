@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="container">
+        
+        <div id="header">STANDARD CALCULATOR</div>
+        <form id="form" action="" name="form">
+            <input type="text" id="result" name="result" onkeypress></form>
+
+        <div id="numbers">
+
+
+            <div id="line0" class="lines">
+                <button id="7" class="nbutton" onclick="button(7)" > 7 </button>
+                <button id="4" class="nbutton" onclick="button(4)" > 4 </button>
+                <button id="1" class="nbutton" onclick="button(1)"> 1 </button>
+                <button id="0" class="nbutton"> # </button>
+            </div>
+
+            <div id="line1" class="lines" onkeypress="">
+                <button id="8" class="nbutton" onclick="button(8)"> 8 </button>
+                <button id="5" class="nbutton" onclick="button(5)"> 5 </button>
+                <button id="2" class="nbutton" onclick="button(2)"> 2 </button>
+                <button id="0" class="nbutton" onclick="button(0)"> 0 </button>
+            </div> 
+            
+            <div id="line2" class="lines">
+                <button id="9" class="nbutton" onclick="button(9)"> 9 </button>
+                <button id="6" class="nbutton" onclick="button(6)"> 6 </button>
+                <button id="3" class="nbutton" onclick="button(3)"> 3 </button>
+                <button id="." class="nbutton" onclick="button('.')"> . </button>
+            </div>
+            
+            <div id="line3" class="lines">
+                <button id="/" class="button" onclick="button('/')"> / </button>
+                <button id="*" class="button" onclick="button('*')"> x </button>
+                <button id="-" class="button" onclick="button('-')"> - </button>
+                <button id="+" class="button" onclick="button('+')"> + </button>
+            </div>
+            
+            <div id="line4" class="lines"> 
+                <button id="c"    class="cbutton" onclick="remove()"> C </button>
+                <button id="back" class="button" onclick="backbtn()">  ⌫  </button>
+                <button id="equal"  class="eqbutton" onclick="equalbtn()"> = </button>
+      
+                       
+            </div> 
+
+     </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
